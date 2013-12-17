@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="3dp"
+    android:stretchColumns="*" >
+
+    <TextView
+        android:id="@+id/textView0"
+        android:background="#708090"
+        android:clickable="false"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+
+    <TableRow android:id="@+id/tableRow1" >
+
+        <TextView
+            android:id="@+id/label_username"
+            android:layout_width="wrap_content" />
+    </TableRow>
+
+    <TableRow android:id="@+id/tableRow2" >
+
+        <TextView
+            android:id="@+id/label_firstname"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="3dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:gravity="right"
+            android:padding="3dp"
+            android:scaleType="fitEnd"
+            android:visibility="invisible" />
+    </TableRow>
+
+</TableLayout>

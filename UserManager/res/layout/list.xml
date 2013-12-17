@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+      <!-- RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/addBtn"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/search"
+            android:ems="10"
+            android:hint="@string/search"
+            android:textColor="#000000" 
+            android:visibility="gone">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="addItems"
+            android:text=""
+            android:drawableTop="@drawable/create_material_confirmation_48" 
+            android:visibility="gone"/>
+
+    </RelativeLayout-->
+    
+    <LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:visibility="gone">
+
+		<EditText android:id="@+id/search_box" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp" android:layout_marginTop="5dp"
+			android:drawableRight="@drawable/search"
+			android:drawablePadding="10dp" android:hint="@string/search"
+			android:textColor="#000000">
+		</EditText>
+
+	</LinearLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/loading_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="480dp" >
+
+		<ProgressBar android:id="@+id/progressBar1"
+			style="?android:attr/progressBarStyleLarge" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true" />
+
+	</RelativeLayout>
+
+	<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="0dip" android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference
+        android:defaultValue="Gateway"
+        android:dialogTitle="@string/authentication_method"
+        android:entries="@array/authentication_method_type_array"
+        android:entryValues="@array/authentication_method_type_values_array"
+        android:key="gateway_pref_auth_method"
+        android:title="@string/authentication_method" />
+
+    <EditTextPreference android:key="gateway_pref_url" android:title="@string/gateway_url" android:defaultValue="http://saperp.pokitapps.com:8200/sap/opu/odata/sap/ZUSERSERVICE_SRV"/>
+    <EditTextPreference android:title="@string/gateway_sap_client" android:key="gateway_pref_sap_client" android:defaultValue="800"/>
+        
+	<EditTextPreference
+        android:dialogTitle="@string/portal_url"
+        android:key="gateway_pref_portal_url"
+        android:title="@string/portal_url" />
+       
+</PreferenceScreen>

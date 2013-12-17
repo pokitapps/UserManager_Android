@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.test.usermanager"
+      android:versionCode="1"
+      android:versionName="1.0">
+      
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application 
+    	android:icon="@drawable/icon" 
+    	android:label="@string/app_name" 
+    	android:debuggable="true">
+    	
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name=".Page1ListActivity"
+            android:configChanges="orientation"
+            android:icon="@drawable/icon"
+            android:label="UserList"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.Page1ListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name=".Page1CreateListActivity"
+            android:configChanges="orientation"
+            android:icon="@drawable/icon"
+            android:label="UserList"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter>
+                <action android:name="android.intent.action.Page1CreateListActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+		<activity
+            android:name=".Page2DetailsActivity"
+            android:configChanges="orientation"
+            android:label="UserDetails"
+            android:theme="@android:style/Theme.Light" >
+        </activity>
+        <activity android:name=".preferences.MainPreferencesActivity">
+			<intent-filter>
+                <action android:name="com.test.usermanager.preferences.MainPreferencesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+		<activity android:name=".preferences.GatewaySettingsPreferencesActivity">
+			<intent-filter>
+                <action android:name="com.test.usermanager.preferences.GatewaySettingsPreferencesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+		<activity android:name=".preferences.SUPSettingsPreferencesActivity">
+			<intent-filter>
+                <action android:name="com.test.usermanager.preferences.SUPSettingsPreferencesActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+    </application>
+</manifest>

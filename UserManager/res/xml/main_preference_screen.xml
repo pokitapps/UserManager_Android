@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ListPreference android:key="main_pref_connection_type" android:title="@string/connection_type" android:entries="@array/connection_type_array" android:entryValues="@array/connection_type_values_array" android:defaultValue="Gateway" android:summary="@string/gateway_connection_type"/>
+    <Preference android:key="main_pref_gateway_settings" android:title="@string/gateway_settings">
+            <intent android:action="com.test.usermanager.preferences.GatewaySettingsPreferencesActivity" />
+    </Preference>
+    <Preference android:key="main_pref_sup_settings" android:title="@string/sup_settings" android:enabled="false">
+			<intent android:action="com.test.usermanager.preferences.SUPSettingsPreferencesActivity" />
+    </Preference>
+</PreferenceScreen>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:key="sup_pref_host"
+        android:title="@string/sup_host" />
+    <EditTextPreference
+        android:key="sup_pref_port"
+        android:title="@string/sup_port" />
+    <EditTextPreference
+        android:key="sup_pref_domain"
+        android:title="@string/sup_domain" />
+    <EditTextPreference
+        android:key="sup_pref_application_id"
+        android:title="@string/application_id" />
+    <EditTextPreference
+        android:key="sup_pref_security_config"
+        android:title="@string/security_configuration" />
+    <EditTextPreference
+        android:key="sup_pref_farmid"
+        android:title="@string/farm_id" />
+    <EditTextPreference
+        android:key="sup_pref_urlsuffix"
+        android:title="@string/url_suffix" />
+
+</PreferenceScreen>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="libs/Cache-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/com.sap.odata.rt.android.framework-1.1.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file://Users/bradpokroy/Dropbox/Development/Android_mac_brad/UserManager/libs/com.sap.odata.rt.android.framework-1.1.1.jar!/apidocs"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/Common-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Connectivity-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/CoreServices-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/DataVaultLib-2.3.3.13.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/gson-2.2.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Parser-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/perflib-1.1.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Persistence-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Request-3.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/sap-e2etrace-2.3.3.13.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

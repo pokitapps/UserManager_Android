@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Main Preferences Strings -->
+	<string name="connection_type">Connection Type</string>
+	<string name="gateway_connection_type">Gateway</string>
+	<string name="sup_connection_type">SMP</string>
+	<string name="gateway_settings">Gateway Settings</string>
+	<string name="sup_settings">SMP Settings</string>
+
+	<!-- Gateway Settings Preferences Strings -->
+	<string name="authentication_method">Authentication Method</string>
+	<string name="gateway_url">URL</string>
+	<string name="gateway_sap_client">SAP Client</string>
+	<string name="portal_url">Portal URL</string>
+	<string name="gateway_defined_type">Gateway Defined</string>
+	<string name="portal_type">SAP Portal</string>
+
+	<!-- SUP Preferences Strings -->
+	<string name="sup_host">SMP Host</string>
+	<string name="sup_port">SMP Port</string>
+	<string name="sup_domain">SMP Domain (Optional)</string>
+	<string name="application_id">Application ID</string>
+	<string name="security_configuration">Security Configuration</string>
+	<string name="farm_id">Farm ID</string>
+	<string name="url_suffix">URL Suffix (Optional)</string>
+
+	<!-- Preferences Validation Strings -->
+	<string name="validation_msg">Invalid parameter</string>
+	<string name="sup_validation_msg">You must configure all SMP settings</string>
+	<string name="gw_validation_msg">You must enter a URL</string>
+	<string name="main_sup_validation">Configure the SMP settings</string>
+	<string name="main_gw_validation">Configure the SAP NetWeaver Gateway settings
+	</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dateText"
+        android:layout_alignBottom="@+id/dateText"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/dateText"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    
+    <EditText
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="date" >
+
+        <requestFocus />
+    </EditText>
+    
+    <Button android:id="@+id/button1"
+        android:text="go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/dateText"
+        android:layout_alignParentRight="true"
+        android:onClick="button_click"  />
+
+</RelativeLayout>
