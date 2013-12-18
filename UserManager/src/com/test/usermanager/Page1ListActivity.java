@@ -192,15 +192,15 @@ public class Page1ListActivity extends ListActivity implements
 				performLogout();
 				return true;
 				
-			case R.id.menu_item_create_user:
-				Intent intent = new Intent(this, Page2DetailsActivity.class);
-				User item = (User) listAdapter.getItem(position);
-				
-				Page2DetailsActivity.parentEntry = item;
-				
-				// navigation to next screen
-				startActivity(intent);
-				return true;
+//			case R.id.menu_item_create_user:
+//				Intent intent = new Intent(this, Page2DetailsActivity.class);
+//				User item = (User) listAdapter.getItem(position);
+//				
+//				Page2DetailsActivity.parentEntry = item;
+//				
+//				// navigation to next screen
+//				startActivity(intent);
+//				return true;
 			default:
 				super.onOptionsItemSelected(item);
 				return false;
